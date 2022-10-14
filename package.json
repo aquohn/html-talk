@@ -22,7 +22,7 @@
     "watch": "bin/serve"
   },
   "dependencies": {
-    "reveal.js": "^3.9.2",
+    "reveal.js": "^4.3.1",
     "reveal.js-menu": "^1.2.0",
     "reveal.js-notes-pointer": "^0.1.4"
   },
@@ -33,17 +33,22 @@
   ],
   "devDependencies": {
     "chokidar": "^3.5.2",
-    "chrome-headless-render-pdf": "^1.9.0",
+    "chrome-headless-render-pdf": "^1.1.0",
     "express": "^4.17.1",
     "livereload": "^0.9.3",
     "locks": "^0.2.2",
     "lodash.template": "^4.5.0",
-    "mathjax-node-page": "^3.2.0",
+    "mathjax-node-page": "^1.4.0",
     "minimist": "^1.2.5",
     "pug": "^3.0.2",
     "pug-plugin-debug-line": "github:pugjs/pug-plugin-debug-line",
     "sass": "^1.43.4",
     "split2": "^4.1.0",
     "ws": "^7.3.1"
-  }
+  },
+  "bundleDependencies": [
+    "reveal.js",
+    "reveal.js-menu",
+    "reveal.js-notes-pointer"
+  ]
 }

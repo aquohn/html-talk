@@ -6,8 +6,8 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 
-    link(rel="stylesheet", href="node_modules/reveal.js/css/reveal.css")
-    link(rel="stylesheet", href="css/djs.css")
+    link(rel="stylesheet", href="node_modules/reveal.js/dist/reveal.css")
+    link(rel="stylesheet", href="css/scss/djs.css")
 
     //- <!-- Used for code syntax highlighting -->
     //- link(rel="stylesheet", href="node_modules/reveal.js/lib/css/zenburn.css")
@@ -17,8 +17,8 @@ html(lang="en")
       link.rel = 'stylesheet';
       link.type = 'text/css';
       link.href = (window.location.search.match(/print-pdf/gi) ?
-                   'node_modules/reveal.js/css/print/pdf.css' :
-                   'node_modules/reveal.js/css/print/paper.css');
+                   'css/node_modules/reveal.js/css/print/pdf.css' :
+                   'css/node_modules/reveal.js/css/print/paper.css');
       document.getElementsByTagName('head')[0].appendChild(link);
 
   body
@@ -26,7 +26,7 @@ html(lang="en")
       .slides
         block slides
 
-    script(src="node_modules/reveal.js/js/reveal.js")
+    script(src="node_modules/reveal.js/dist/reveal.js")
 
     //- sets use_livereload, use_sync, for_web, for_pdf variables
     script(src="js/config.js")
