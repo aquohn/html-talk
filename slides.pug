@@ -11,8 +11,9 @@ block title
   title Title tag for the slides
 
 block slides
-  section
-    h1 A Cool Title
+  section(data-background="img/title.png")
+    div(style="background-color: rgba(255, 255, 255, 0.7); color: #000; padding: 1em; margin: 1em; border-radius: 0.5em;")
+      h1 A Cool Title
 
     p.for-web(style="font-size: 80%").
       (Swipe or arrow keys to move through slides; `m` for a menu to jump; `?` to show more.)
@@ -56,3 +57,17 @@ block slides
       p.fragment(data-fragment-index=2) $e^{\pi \mathbb{i}} = -1$
       p.fragment(data-fragment-index=4).
         $\sum_{j=1}^b j = \frac{b (b + 1)}{2}$
+
+  section(data-transition="fade")
+    h2 Diagrams in columns
+    .columns
+      .block-left(style="width: 30%")
+        img(src="img/alice.jpg")
+        img(class="fragment" src="img/itema.svg" data-fragment-index=1)
+      div(class="block-right", style="width: 65%")
+        p(class="fragment speech" data-fragment-index=1) These features are great!
+          img(class="fragment" src="img/decoration.png" style="width: 70%")
+
+  section(data-background="black")
+    video
+      source(src="img/video.webm")

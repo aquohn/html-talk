@@ -72,6 +72,12 @@ $heading4Size: 1.0em;
     .center { text-align: center; }
     .right  { text-align: right;  }
 
+    .columns {
+        display: flex;
+        flex-direction: row;
+        padding: 0em 1em;
+    }
+
     .block-left {
         display: inline-block;
         margin-right: .5em;
@@ -92,6 +98,107 @@ $heading4Size: 1.0em;
 
     tt, .tt {
         font-family: 'Inconsolata', monospace;
+    }
+
+    // Adapted from https://codepen.io/JoeHastings/pen/gPrPMo, (c) 2015 - Joe
+    // Hastings, under the MIT License
+    p.thought {
+        position: relative;
+        border: 0.2em solid $mainColor;
+        padding: 0.75em;
+        border-radius: 3em;
+
+        &:before {
+            position: absolute;
+            content: " ";
+            border: 0.2em solid $mainColor;
+            border-radius: 1em;
+            width: 1em;
+            height: 1em;
+            left: -0.75em;
+            bottom: -0.75em;
+        }
+
+        &:after {
+            position: absolute;
+            content: " ";
+            border: 0.2em solid $mainColor;
+            border-radius: 1em;
+            width: 0.5em;
+            height: 0.5em;
+            left: -1.5em;
+            bottom: -1.5em;
+        }
+    }
+
+    %p-speech, p.speech {
+        position: relative;
+        border: 0.2em solid $mainColor;
+        padding: 0.5em;
+        border-radius: 1em;
+        margin-bottom: 2em;
+
+        &:before, &:after {
+            position: absolute;
+            content: " ";
+            width: 0em;
+            height: 0em;
+        }
+
+        &:before {
+            bottom: -2em;
+            left: 2em;
+            border-width: 1em;
+            border-style: solid;
+            border-color: $mainColor transparent transparent $mainColor;
+        }
+
+        &:after {
+            bottom: -1.5em;
+            left: 2.2em;
+            border-width: 0.8em;
+            border-style: solid;
+            border-color: $backgroundColor transparent transparent $backgroundColor;
+        }
+    }
+
+    p.speech-right {
+        @extend %p-speech;
+
+        &:before {
+            right: 2em;
+            left: unset;
+            border-color: $mainColor $mainColor transparent transparent;
+        }
+
+        &:after {
+            right: 2.2em;
+            left: unset;
+            border-color: $backgroundColor $backgroundColor transparent transparent;
+        }
+    }
+
+    td {
+        text-align: center;
+        font-size: 0.8em;
+        border: unset;
+    }
+
+    td > img {
+        margin: 0.25em;
+    }
+
+    th {
+        border: unset;
+    }
+
+    img.thumb {
+        max-width: 7em;
+        max-height: 5em;
+    }
+
+    .invis {
+        visibility: hidden;
     }
 }
 
