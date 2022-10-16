@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('lmsans10-bold.woff2') format('woff2'),
+         url('lmsans10-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('lmsans10-boldoblique.woff2') format('woff2'),
+         url('lmsans10-boldoblique.woff') format('woff');
+    font-weight: bold;
+    font-style: oblique;
+
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('lmsans10-oblique.woff2') format('woff2'),
+         url('lmsans10-oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: oblique;
+
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('lmsans10-regular.woff2') format('woff2'),
+         url('lmsans10-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('lmsansdemicond10-oblique.woff2') format('woff2'),
+         url('lmsansdemicond10-oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: oblique;
+    font-stretch: semi-condensed;
+
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('lmsansdemicond10-regular.woff2') format('woff2'),
+         url('lmsansdemicond10-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: semi-condensed;
+
+}
