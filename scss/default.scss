@@ -50,6 +50,15 @@ $heading4Size: 1.0em;
     li {
         margin-bottom: 1ex;
     }
+
+    li ul {
+        margin-top: 1ex;
+    }
+
+    li li {
+        font-size: 90%;
+    }
+
     .cite {
         font-size: 60%;
     }
