@@ -1,6 +1,9 @@
 /index.html
 /deployed
-/talk.pdf
+/*.pdf
+/img
+/css
+/fonts
 
 # Too much annoying
 /package-lock.json
