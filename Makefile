@@ -5,7 +5,7 @@ BIN := ${CURDIR}/node_modules/.bin
 all: index.html css/scss/default.css css/node_modules/reveal.js/css/print/pdf.css css/node_modules/reveal.js/css/print/paper.css
 
 clean:
-	rm -f index.html js/mj-plugin/*.js `find css -name '*.css'`
+	rm -f index.html js/mj-plugin/*.js `find css/scss -name '*.css'`
 
 index.html: slides.pug layout.pug js/mj-plugin/fragments.js
 	"${CURDIR}/bin/compile"
